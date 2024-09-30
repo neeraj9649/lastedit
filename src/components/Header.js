@@ -5,7 +5,7 @@ import Herosection from './header_section/Herosection'
 function Header() {
   return (
 
-    <div>
+    <div className='m-0 p-0 w-[100vw] h-[100vh]'>
         <Navbar/>
         <Herosection/>
     </div>

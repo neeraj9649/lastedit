@@ -1,27 +1,22 @@
 import React from 'react'
+import Navdata from './Navdata'
 
-function Navdetails({name, title, src, data}) {
+function Navdetails() {
   return (
-    <div>
-        <a href='#' className='group text-xl text-white'>
-          {name}
-          <div className='scale-x-0 group-hover:scale-x-100 duration-300 h-2 bg-white '></div>
-          </a>
-        {/* <h3 className='text-xl text-white'>{name}</h3> */}
-        
-        
-        <div>
+    <>
+        {Navdata.map(value=>(
           <div>
-            <p>{title}</p>
-            <img src={src}></img>
+            <div className='px-3 text-left md:cursor-pointer'>
+              <h1 className='text-white'>
+                {value.menu}
+              </h1>
+              <h1 className='md:hidden text-black'>
+                {value.menu}
+              </h1>
+            </div>
           </div>
-          <div>
-            <ul>
-              <li>{data.name}</li>
-            </ul>
-          </div>
-        </div>
-    </div>
+        ))}
+    </>
   )
 }
 

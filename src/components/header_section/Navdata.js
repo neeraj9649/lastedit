@@ -34,18 +34,18 @@ const navlinks = [
             {
                 id:2,
                 name:[
-                    "Blockchain IOT Development",
-                    "Blockchain Game Development",
-                    "Blockchain Consulting Services",
-                    "DApp Development",
-                    "Hyperledger Blockchain Development"
+                    {name:"Blockchain IOT Development"},
+                    {name:"Blockchain Game Development"},
+                    {name:"Blockchain Consulting Services"},
+                    {name:"DApp Development"},
+                    {name:"Hyperledger Blockchain Development"}
                     ]
             }
         ]
     },
     {
         id:3,
-        name:"Our Solutions",
+        menu:"Our Solutions",
         title:"Our Services",
         src:"#",
         data:[
@@ -54,13 +54,13 @@ const navlinks = [
                 subtitle:true,
                 title:"Cryptocurrency Development",
                 name:[
-                    "ICO Development",
-                    "STO Development",
-                    "Smart Contract Development",
-                    "Token/coin Development",
-                    "Cryptocurrency Development",
-                    "Cryptocurrency Exchange Development",
-                    "Crypto Wallet Development"
+                    {name:"ICO Development"},
+                    {name:"STO Development"},
+                    {name:"Smart Contract Development"},
+                    {name:"Token/coin Development"},
+                    {name:"Cryptocurrency Development"},
+                    {name:"Cryptocurrency Exchange Development"},
+                    {name:"Crypto Wallet Development"}
                     ]
             },
             {
@@ -68,9 +68,9 @@ const navlinks = [
                 subtitle:true,
                 title:"Digital Marketing",
                 name:[
-                    "Search Engine Optimization (SEO)",
-                    "App Store Optimization",
-                    "ICO Marketing"                   
+                    {name:"Search Engine Optimization (SEO)"},
+                    {name:"App Store Optimization"},
+                    {name:"ICO Marketing"}                   
                     ]
             },
             {
@@ -78,7 +78,7 @@ const navlinks = [
                 subtitle:true,
                 title:"Game Development",
                 name:[
-                    "Game Development Services"            
+                    {name:"Game Development Services"}            
                 ]
             },
             {
@@ -86,10 +86,10 @@ const navlinks = [
                 subtitle:true,
                 title:"Website Development",
                 name:[
-                    "Website Development",
-                    "Software Development",
-                    "Mobile Application Development",
-                    "Ecommerce Solutions"                 
+                    {name:"Website Development"},
+                    {name:"Software Development"},
+                    {name:"Mobile Application Development"},
+                    {name:"Ecommerce Solutions"}                 
                     ]
             }
         ]
@@ -97,7 +97,7 @@ const navlinks = [
     
     {
         id:4,
-        name:"Contact Us"
+        menu:"Contact Us"
     }
     
 ];
