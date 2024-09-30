@@ -1,34 +1,34 @@
 const navlinks = [
     {
         id:1,
-        name:"Company",
+        menu:"Company",
         title:"About Versai Technology",
         src:"#",
-        data:[
+        submenu:[
             {
                 id:1,
-                name:[
-                    "About Us",
-                    "Contact Us",
-                    "Gallery"
+                sublinks:[
+                    {name:"About Us"},
+                    {name:"Contact Us"},
+                    {name:"Gallery"},
                     ]
             }
         ]
     },
     {
         id:2,
-        name:"Blockchain",
+        menu:"Blockchain",
         title:"Blockchain Development Services",
         src:"#",
-        data:[
+        submenu:[
             {
                 id:1,
-                name:[
-                    "Blockchain Development",
-                    "Supply Chain Developments",
-                    "DeFI Development",
-                    "Private Blockchain Development",
-                    "Blockchain POC Development"
+                sublinks:[
+                    {name:"Blockchain Development"},
+                    {name:"Supply Chain Developments"},
+                    {name:"DeFI Development"},
+                    {name:"Private Blockchain Development"},
+                    {name:"Blockchain POC Development"}
                     ]
             },
             {
@@ -51,6 +51,7 @@ const navlinks = [
         data:[
             {
                 id:1,
+                subtitle:true,
                 title:"Cryptocurrency Development",
                 name:[
                     "ICO Development",
@@ -64,6 +65,7 @@ const navlinks = [
             },
             {
                 id:2,
+                subtitle:true,
                 title:"Digital Marketing",
                 name:[
                     "Search Engine Optimization (SEO)",
@@ -73,6 +75,7 @@ const navlinks = [
             },
             {
                 id:3,
+                subtitle:true,
                 title:"Game Development",
                 name:[
                     "Game Development Services"            
@@ -80,6 +83,7 @@ const navlinks = [
             },
             {
                 id:4,
+                subtitle:true,
                 title:"Website Development",
                 name:[
                     "Website Development",
@@ -93,18 +97,8 @@ const navlinks = [
     
     {
         id:4,
-        name:"Contact Us",
-        data:[
-            {
-                id:1,
-                name:[
-                    "About Us",
-                    "Contact Us",
-                    "Gallery"
-                    ]
-            }
-        ]
-    },
+        name:"Contact Us"
+    }
     
 ];
 
