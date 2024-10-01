@@ -2,6 +2,7 @@ const navlinks = [
     {
         id:1,
         menu:"Company",
+        content:true,
         title:"About Versai Technology",
         src:"#",
         submenu:[
@@ -18,6 +19,7 @@ const navlinks = [
     {
         id:2,
         menu:"Blockchain",
+        content:true,
         title:"Blockchain Development Services",
         src:"#",
         submenu:[
@@ -46,9 +48,10 @@ const navlinks = [
     {
         id:3,
         menu:"Our Solutions",
+        content:true,
         title:"Our Services",
         src:"#",
-        data:[
+        submenu:[
             {
                 id:1,
                 subtitle:true,
@@ -97,6 +100,7 @@ const navlinks = [
     
     {
         id:4,
+        content:false,
         menu:"Contact Us"
     }
     

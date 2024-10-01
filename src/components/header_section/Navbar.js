@@ -1,41 +1,32 @@
 import React from 'react'
 import { useState } from 'react'
-// import Navdata from './Navdata'
-
+import Navdata from './Navdata'
+import logo from './logo.png'
 import Navdetails from './Navdetails';
 
 function Navbar() {
     const [open, setopen] = useState(false);
   return (
-    <nav className=' bg-black'>
-      <div  className=' flex justify-around items-center gap-4'>
-        <div className=' text-4xl font-bold text-white text-center'>
-          logo
-        </div>
-        <div className={`md:hidden flex justify-between p-0 px-7 z-50 w-full text-start text-4xl font-bold text-black`}>
-          logo
-          <div onClick={()=> setopen(!open)}>
-            <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
+    <nav className='bg-white'>
+      <div className='flex justify-between items-center gap-4 p-4'>
+        <div className='z-50 p-5 md:w-auto w-full flex justify-between'>
+          <img src={logo} className='h-9 md:cursor-pointer'></img>
+          <div className='md:hidden text-3xl' onClick={()=>(setopen(!open))}>
+            <ion-icon name={`${open ? 'close' : 'menu'}`}></ion-icon>
           </div>
         </div>
-        
-        
-        
-        <ul className='md:flex hidden items-center justify-around gap-8 uppercase'>
-            <Navdetails/>
-        </ul>
-        <div className='md:flex hidden gap-7 justify-between items-center'>
-          <button className='w-12 h-12 text-white text-xl bg-red-500 rounded-full p-1'>Ph</button>
-          <button className='w-[200px] p-2 text-white text-xl bg-blue-500 rounded-lg'>Apply for Internship</button>
+        <ul className='md:flex hidden items-center gap-7 uppercase'>
+          <Navdetails/>
+        <div className='flex gap-4'>
+          <button>phone</button>
+          <button>Apply for internship</button>
         </div>
-        {/* mobile menu */}
-        
-        <ul className={`md:hidden bg-white absolute w-full h-full bottom-0 py-24 pl-4 duration-500 ${open ? 'left-10' : 'left-[100%]'}`}>
-            <Navdetails/>
-            
         </ul>
-
-        
+        {/* mobile menu */}
+        <ul className=
+        {`md:hidden absolute bg-white w-full h-full bottom-0 left-0 py-24 pl-4 duration-500 ${open ? 'left-0' : 'left-[-100%]'}`}>
+          <Navdetails/>
+        </ul>
       </div>
     </nav>
   )
