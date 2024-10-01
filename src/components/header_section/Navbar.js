@@ -1,26 +1,27 @@
 import React from 'react'
 import { useState } from 'react'
 import Navdata from './Navdata'
-import logo from './logo.png'
+import logo from './logo1.png'
 import Navdetails from './Navdetails';
 
 function Navbar() {
     const [open, setopen] = useState(false);
   return (
-    <nav className='bg-white'>
-      <div className='flex justify-between items-center gap-4 p-4'>
-        <div className='z-50 p-5 md:w-auto w-full flex justify-between'>
-          <img src={logo} className='h-9 md:cursor-pointer'></img>
-          <div className='md:hidden text-3xl' onClick={()=>(setopen(!open))}>
+    <nav className='bg-white border-b-black border-b-2 border-opacity-35 z-100'>
+      <div className='flex h-14  justify-between items-center gap-4 px-6'>
+        <div className=' z-50 px-5 py-4 md:w-auto w-full flex justify-between items-center '>
+          <img src={logo} className='h-24 md:cursor-pointer'></img>
+          <div className='md:hidden text-4xl' onClick={()=>(setopen(!open))}>
             <ion-icon name={`${open ? 'close' : 'menu'}`}></ion-icon>
           </div>
         </div>
-        <ul className='md:flex hidden items-center gap-7 uppercase'>
+        <ul className='md:flex hidden items-center gap-7 '>
+          <h1 className='font-semibold cursor-pointer hover:text-green-950 uppercase z-50'>Home</h1>
           <Navdetails/>
-        <div className='flex gap-4'>
-          <button>phone</button>
-          <button>Apply for internship</button>
-        </div>
+          <div className='md:flex hidden gap-4 items-center'>
+                <button className='text-2xl w-11 h-[41px] bg-green-950 rounded-full text-center pt-1 text-white '><ion-icon name="call"></ion-icon></button>
+                <button className='px-4 h-10 bg-blue-700 hover:bg-blue-600 duration-200 text-white text-md font-semibold rounded-2xl'>Contact Us</button>
+          </div>
         </ul>
         {/* mobile menu */}
         <ul className=

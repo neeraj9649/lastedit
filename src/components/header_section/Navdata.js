@@ -1,109 +1,42 @@
 const navlinks = [
+   
+    
     {
         id:1,
-        menu:"Company",
-        content:true,
-        title:"About Versai Technology",
-        src:"#",
-        submenu:[
-            {
-                id:1,
-                sublinks:[
-                    {name:"About Us"},
-                    {name:"Contact Us"},
-                    {name:"Gallery"},
-                    ]
-            }
-        ]
-    },
-    {
-        id:2,
-        menu:"Blockchain",
-        content:true,
-        title:"Blockchain Development Services",
-        src:"#",
-        submenu:[
-            {
-                id:1,
-                sublinks:[
-                    {name:"Blockchain Development"},
-                    {name:"Supply Chain Developments"},
-                    {name:"DeFI Development"},
-                    {name:"Private Blockchain Development"},
-                    {name:"Blockchain POC Development"}
-                    ]
-            },
-            {
-                id:2,
-                name:[
-                    {name:"Blockchain IOT Development"},
-                    {name:"Blockchain Game Development"},
-                    {name:"Blockchain Consulting Services"},
-                    {name:"DApp Development"},
-                    {name:"Hyperledger Blockchain Development"}
-                    ]
-            }
-        ]
-    },
-    {
-        id:3,
-        menu:"Our Solutions",
+        menu:"Our Services",
         content:true,
         title:"Our Services",
-        src:"#",
+        src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxljCiU3pRUXpw-39aklTNk7BDV3G9Dn7ocw&s",
         submenu:[
+            
             {
                 id:1,
                 subtitle:true,
-                title:"Cryptocurrency Development",
-                name:[
-                    {name:"ICO Development"},
-                    {name:"STO Development"},
-                    {name:"Smart Contract Development"},
-                    {name:"Token/coin Development"},
-                    {name:"Cryptocurrency Development"},
-                    {name:"Cryptocurrency Exchange Development"},
-                    {name:"Crypto Wallet Development"}
+                title:"Digital Marketing",
+                sublinks:[
+                    {name:"ICO Marketing"},                   
+                    {name:"Poster Design"},                   
+                    {name:"Ads (Social Media)"},                   
+                    {name:"App Store Optimization"},
+                    {name:"Search Engine Optimization (SEO)"},
                     ]
             },
+            
             {
                 id:2,
                 subtitle:true,
-                title:"Digital Marketing",
-                name:[
-                    {name:"Search Engine Optimization (SEO)"},
-                    {name:"App Store Optimization"},
-                    {name:"ICO Marketing"}                   
-                    ]
-            },
-            {
-                id:3,
-                subtitle:true,
-                title:"Game Development",
-                name:[
-                    {name:"Game Development Services"}            
-                ]
-            },
-            {
-                id:4,
-                subtitle:true,
-                title:"Website Development",
-                name:[
+                title:"Core Development",
+                sublinks:[
+                    {name:"Custom Development"},                 
                     {name:"Website Development"},
+                    {name:"Ecommerce Solutions"},                 
                     {name:"Software Development"},
-                    {name:"Mobile Application Development"},
-                    {name:"Ecommerce Solutions"}                 
+                    {name:"IOS Application Development"},
+                    {name:"Mobile Application De,md.sc dvelopment"},
                     ]
             }
         ]
     },
-    
-    {
-        id:4,
-        content:false,
-        menu:"Contact Us"
-    }
-    
-];
+    ];
 
 export default navlinks;
