@@ -14,11 +14,11 @@ const navlinks = [
                 subtitle:true,
                 title:"Digital Marketing",
                 sublinks:[
-                    {name:"ICO Marketing"},                   
-                    {name:"Poster Design"},                   
-                    {name:"Ads (Social Media)"},                   
-                    {name:"App Store Optimization"},
+                                       
                     {name:"Search Engine Optimization (SEO)"},
+                    {name:"App Store Optimization"},
+                    {name:"Ads (Social Media)"},                   
+                    {name:"Poster Design"},                   
                     ]
             },
             
@@ -27,12 +27,12 @@ const navlinks = [
                 subtitle:true,
                 title:"Core Development",
                 sublinks:[
-                    {name:"Custom Development"},                 
                     {name:"Website Development"},
+                    {name:"Mobile Application Development"},
                     {name:"Ecommerce Solutions"},                 
                     {name:"Software Development"},
                     {name:"IOS Application Development"},
-                    {name:"Mobile Application De,md.sc dvelopment"},
+                    {name:"Custom Development"},                 
                     ]
             }
         ]

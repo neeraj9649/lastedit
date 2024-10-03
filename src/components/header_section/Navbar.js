@@ -26,7 +26,7 @@ function Navbar() {
         {/* mobile menu */}
         <ul className=
         {`md:hidden absolute z-40 bg-white w-full h-full bottom-0 left-0 py-24 pl-4 duration-500  ${open ? 'left-0' : 'left-[-100%]'}`}>
-          <Navdetails/>
+          <Navdetails menu={open}/>
         </ul>
       </div>
     </nav>
