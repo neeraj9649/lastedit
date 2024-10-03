@@ -1,0 +1,81 @@
+/* Hide scrollbar */
+.hide-scrollbar {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For IE and Edge */
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  /* Product container styles */
+  .product-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 0 2rem;
+  }
+  
+  .product-card {
+    flex-shrink: 0;
+    width: 12rem;
+    height: 18rem;
+    margin-right: 2rem;
+    border-radius: 30px;
+  }
+  
+  /* Gradient backgrounds for each product card */
+  .card-gradient-1 {
+    background: linear-gradient(45deg, #a8cef0,#a761f7);
+    
+  }
+  
+  .card-gradient-2 {
+    background: linear-gradient(45deg, #ac65f8, #5f97f8);
+  }
+  
+  
+  
+  .card-gradient-4 {
+    background: linear-gradient(45deg, #5cffec, #e991dd);
+  }
+  
+  .card-gradient-5 {
+    background: linear-gradient(45deg, #66a8ff, #61faa1);
+  }
+  
+  .card-gradient-6 {
+    background: linear-gradient(45deg, #79ecec, #d9a7f0);
+  }
+  
+  /* Custom image styles */
+  .product-image {
+    border-radius: 1.5rem;
+    position: relative;
+    height: 75%;
+    overflow: hidden;
+
+  }
+  
+  .product-thumb {
+    object-fit: cover;
+    box-sizing: border-box;
+    
+    
+  }
+  
+  /* Category title */
+  /* .product-category {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+  } */
+  
+  .custom-text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  

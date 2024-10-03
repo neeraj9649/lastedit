@@ -1,13 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
 import Navbar from './header_section/Navbar'
-// import Hero from './header_section/Hero'
+import HeroSection from './header_section/Herosection'
 function Header() {
   return (
 
     <div className=''>
         <Navbar/>
-        {/* <Hero/> */}
+        <HeroSection/>
     </div>
   )
 }
