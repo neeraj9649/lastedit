@@ -2,14 +2,7 @@ import React, { useEffect, useRef } from "react";
 import './ProductSection.css'; // Custom CSS for styling, including gradients.
 
 const ProductSection = () => {
-  const cardname = [
-                    {name:"Website Development"},
-                    {name:"Mobile Application Development"},
-                    {name:"Ecommerce Solutions"},                 
-                    {name:"Software Development"},
-                    {name:"Startup Solutions"},
-                    
-  ]
+ 
   const productContainerRef = useRef(null);
   const scrollInterval = useRef(null);
 
@@ -72,7 +65,7 @@ const ProductSection = () => {
                   
                 />
               </div>
-                <h1 className=" text-left pl-5  font-semibold text-lg">{product.name}</h1>
+                <h1 className=" text-left pl-5 text-black font-semibold text-lg">{product.name}</h1>
             </div>
           ))}
         </div>

@@ -16,8 +16,8 @@ const HeroSection = () => {
             {/* Content */}
             <div className="flex flex-col md:flex-row w-full h-full">
                 <div className="z-10  text-white flex flex-col w-full relative md:top-20  md:w-1/2 top-24  text-center  md:text-left">
-                   <div className='w-[75%] h-[75%] m-auto md:mr-0'>
-                   <h1 className="text-4xl sm:text-4xl md:text-6xl font-bold font-serif w-[300px] m-auto md:m-0">Welcome to <br className='md:flex hidden'></br> VerSai</h1>
+                   <div className='w-[75%] h-[75%] m-auto md:mr-0 flex flex-col gap-4'>
+                   <h1 className="text-4xl sm:text-4xl md:text-5xl font-bold font-serif w-[350px] m-auto md:m-0">Welcome to <br></br> VerSai</h1>
                     <p className="mt-2 sm:mt-4 text-sm sm:text-base md:text-xl font-semibold text-green-950  w-[75%]  m-auto md:m-0">lhhwejhkljwqhejkhwq  kjkdf  ksdjfkj  skdfj  ksjdkfjk  dsjfk  s dfjkj sdk kjskdjf klsdf  ksjdfk  kjskdfj  slkdfj  sdkfjks  dsjfk</p>
                     <button className="px-5 m-auto md:mx-0 sm:px-6 py-2 sm:py-3 mt-3 sm:mt-5 rounded-3xl bg-[#ff7688] w-40">Explore</button>
                    </div>
