@@ -5,7 +5,7 @@ import HeroSection from './header_section/Herosection'
 function Header() {
   return (
 
-    <div className=''>
+    <div>
         <Navbar/>
         <HeroSection/>
     </div>

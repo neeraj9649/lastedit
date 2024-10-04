@@ -26,19 +26,22 @@ function Navbar() {
 
   return (
     <nav className="bg-white border-b-black border-b-2 border-opacity-35 fixed w-full top-0 z-50">
-      <div className="flex h-14 justify-between items-center gap-4 px-6">
+      <div className="flex h-20 justify-between items-center gap-4 px-6">
         <div className="z-50 px-5 py-4 md:w-auto w-full flex justify-between items-center ">
-          <img src={logo} className="h-24 pt-2 md:cursor-pointer" alt="Logo" />
+          <img src={logo} className="h-32 pt-2 md:cursor-pointer" alt="Logo" />
           <div className="md:hidden text-4xl" onClick={handleToggle}>
             <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
           </div>
         </div>
-        <ul className="md:flex z-50 hidden items-center gap-7 ">
+        <ul className="md:flex z-50 hidden items-center gap-4 ">
           <h1 className="font-semibold cursor-pointer hover:text-green-950 uppercase z-50">
             Home
           </h1>
           <Navdetails resetMenu={open} />
           <div className="md:flex hidden gap-4 items-center">
+          <div className="text-md font-semibold mr-6 uppercase">
+            Carrier
+          </div>
             <button className="text-2xl w-11 h-[41px] bg-green-950 rounded-full text-center pt-1 text-white ">
               <ion-icon name="call"></ion-icon>
             </button>

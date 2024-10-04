@@ -47,10 +47,10 @@ const ProductSection = () => {
 
   return (
     <section className="product text-white py-5 mt-32">
-      <h2 className="font-serif text-2xl font-semibold pb-2 capitalize">
+      <h2 className="font-serif text-2xl font-semibold pb-2 capitalize text-center md:text-left px-5 ">
         Transforming your
       </h2>
-      <h2 className=" text-2xl font-serif text-green-950 font-semibold mb-10 capitalize">
+      <h2 className=" text-2xl font-serif text-green-950 font-semibold mb-10 capitalize text-center md:text-left px-5" >
         Idea of Growth into Reality
       </h2>
       <div className="relative">
@@ -72,7 +72,7 @@ const ProductSection = () => {
                   
                 />
               </div>
-                <h1 className=" text-left pl-5 text-black font-semibold text-lg">{product.name}</h1>
+                <h1 className=" text-left pl-5  font-semibold text-lg">{product.name}</h1>
             </div>
           ))}
         </div>
