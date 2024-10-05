@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navdata from "./Navdata";
-
+import { Link } from 'react-router-dom'; // Import Link for routing
 function Navdetails({ resetMenu }) {
   const [open, setOpen] = useState("");
   const [sublinks, setSublinks] = useState("");
@@ -57,12 +57,13 @@ function Navdetails({ resetMenu }) {
                           )}
                           <div className="text-md text-gray-700 flex flex-col gap-1">
                             {sub.sublinks.map((subname) => (
-                              <li
+                              <Link
+                              to={subname.link}
                                 className="hover:text-gray-800"
                                 key={subname.name}
                               >
-                                {subname.name}
-                              </li>
+                                <li>{subname.name}</li>
+                              </Link>
                             ))}
                           </div>
                         </div>
@@ -111,7 +112,7 @@ function Navdetails({ resetMenu }) {
             ))}
           </div>
           <div className="md:hidden py-5 pl-8 text-md font-semibold uppercase md:pr-0 pr-5">
-            Carrier
+            Career
           </div>
         </div>
       ))}
