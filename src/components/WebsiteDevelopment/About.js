@@ -1,4 +1,5 @@
 import React from "react";
+import dotBg from './Images/shape/dot_bg.png'
 const About = () => {
   return (
     <section className="about-agency relative overflow-hidden px-4 md:px-8 lg:px-36 py-12 md:py-16 lg:py-24">
@@ -6,7 +7,7 @@ const About = () => {
         <div className="flex justify-center">
           <div className="w-full lg:w-2/3 text-center">
             <div className="common-heading">
-              <span className="text-base sm:text-lg font-semibold text-2xl md:text-3xl lg:text-4xl text-[#e6047b]">We Are Creative</span>
+              <span className=" sm:text-lg font-semibold text-2xl md:text-3xl lg:text-4xl text-[#e6047b]">We Are Creative</span>
               <h2 className="mb-4 mt-2 text-3xl md:text-4xl lg:text-5xl font-bold">Website Development Company</h2>
             </div>
           </div>
@@ -30,7 +31,8 @@ const About = () => {
       </div>
 
       {/* Background Image */}
-      <div className="absolute inset-0 bg-[url('/path/to/dot_bg.png')] bg-cover"></div>
+      <div className="absolute inset-0 bg-cover"
+      style={{ backgroundImage: `url(${dotBg})` }}></div>
     </section>
   );
 };

@@ -3,11 +3,12 @@ import brandingIcon from './Images/icons/branding.svg';
 import developmentIcon from './Images/icons/development.svg';
 import appIcon from './Images/icons/app.svg';
 import marketingIcon from './Images/icons/marketing.svg';
+import dotBg2 from './Images/shape/dot-shape.png'
 
 const Services = () => {
   return (
-    <section className="service-section relative overflow-hidden px-4 sm:px-12 md:px-24 lg:px-36 py-16 sm:py-20 md:py-28 bg-white">
-      <div className="container mx-auto">
+    <section className="service-section  relative overflow-hidden px-4 sm:px-12 md:px-24 lg:px-36 py-16 sm:py-20 md:py-28 bg-white">
+      <div className="container mx-auto z-20">
         {/* Heading */}
         <div className="flex justify-center">
           <div className="lg:w-2/3 text-center">
@@ -23,9 +24,9 @@ const Services = () => {
         </div>
 
         {/* Service Cards */}
-        <div className="mt-8 sm:mt-10 md:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 justify-center">
+        <div className="mt-8 sm:mt-10  md:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 justify-center">
           {/* Card 1 */}
-          <div className="s-block bg-white p-4 sm:p-6 py-12 sm:py-14 rounded-lg shadow-md transition-transform hover:scale-105">
+          <div className="s-block bg-white z-20 p-4 sm:p-6 py-12 sm:py-14 rounded-lg shadow-md transition-transform hover:scale-105">
             <div className="s-card-icon mb-4">
               <img src={brandingIcon} alt="service" className="w-16 sm:w-20 mx-auto" />
             </div>
@@ -38,7 +39,7 @@ const Services = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="s-block bg-white p-4 sm:p-6 py-12 sm:py-14 rounded-lg shadow-md transition-transform hover:scale-105">
+          <div className="s-block bg-white p-4 z-20 sm:p-6 py-12 sm:py-14 rounded-lg shadow-md transition-transform hover:scale-105">
             <div className="s-card-icon mb-4">
               <img src={developmentIcon} alt="service" className="w-16 sm:w-20 mx-auto" />
             </div>
@@ -51,7 +52,7 @@ const Services = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="s-block bg-white p-4 sm:p-6 py-12 sm:py-14 rounded-lg shadow-md transition-transform hover:scale-105">
+          <div className="s-block bg-white p-4 sm:p-6 z-20 py-12 sm:py-14 rounded-lg shadow-md transition-transform hover:scale-105">
             <div className="s-card-icon mb-4">
               <img src={appIcon} alt="service" className="w-16 sm:w-20 mx-auto" />
             </div>
@@ -64,7 +65,7 @@ const Services = () => {
           </div>
 
           {/* Card 4 */}
-          <div className="s-block bg-white p-4 sm:p-6 py-12 sm:py-14 rounded-lg shadow-md transition-transform hover:scale-105">
+          <div className="s-block bg-white p-4 sm:p-6 z-20 py-12 sm:py-14 rounded-lg shadow-md transition-transform hover:scale-105">
             <div className="s-card-icon mb-4">
               <img src={marketingIcon} alt="service" className="w-16 sm:w-20 mx-auto" />
             </div>
@@ -77,7 +78,7 @@ const Services = () => {
           </div>
 
           {/* Card 5 */}
-          <div className="s-block bg-white p-4 sm:p-6 py-12 sm:py-14 rounded-lg shadow-md transition-transform hover:scale-105">
+          <div className="s-block bg-white p-4 sm:p-6 z-20 py-12 sm:py-14 rounded-lg shadow-md transition-transform hover:scale-105">
             <div className="s-card-icon mb-4">
               <img src={marketingIcon} alt="service" className="w-16 sm:w-20 mx-auto" />
             </div>
@@ -90,7 +91,7 @@ const Services = () => {
           </div>
 
           {/* Card 6 */}
-          <div className="s-block bg-white p-4 sm:p-6 py-12 sm:py-14 rounded-lg shadow-md transition-transform hover:scale-105">
+          <div className="s-block bg-white p-4 sm:p-6 z-20 py-12 sm:py-14 rounded-lg shadow-md transition-transform hover:scale-105">
             <div className="s-card-icon mb-4">
               <img src={marketingIcon} alt="service" className="w-16 sm:w-20 mx-auto" />
             </div>
@@ -105,7 +106,8 @@ const Services = () => {
       </div>
 
       {/* Background Shape */}
-      <div className="absolute inset-0 bg-[url('./Images/shape/dot-shape.png')] bg-cover bg-center"></div>
+      <div className="absolute z-10 inset-0 bg-cover bg-center"
+      style={{ backgroundImage: `url(${dotBg2})` }}></div>
     </section>
   );
 };

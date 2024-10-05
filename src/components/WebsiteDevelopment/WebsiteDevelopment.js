@@ -8,7 +8,7 @@ import WorkCategory from './WorkCategory';
 import WeWork from './WeWork';
 function App() {
   return (
-    <div>
+    <div className=''>
       <HeroSection/>
       <About/>
       <Services/>

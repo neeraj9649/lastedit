@@ -6,11 +6,11 @@ import MainSection from "../main_section/CustomDevelopmentFeatures";
 
 const HeroSection = () => {
   return (
-    <div className=" z-0 relative px-5 md:px-2 flex min-h-screen overflow-hidden bg-gradient-to-r from-[#554ff5] to-[#f6ad78]">
+    <section className=" z-0 relative xl:h-[90%] px-5 md:px-2 flex first-line:overflow-hidden bg-gradient-to-r from-[#554ff5] to-[#f6ad78]">
       {/* Background image */}
       <div className="absolute inset-0 opacity-5">
         <div
-          className="w-full h-full z-10"
+          className="w-full h-full  z-10"
           style={{ backgroundImage: `url(${shapeBackground})` }} // Using imported image as background
         />
       </div>
@@ -43,7 +43,7 @@ const HeroSection = () => {
           <ProductSection />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

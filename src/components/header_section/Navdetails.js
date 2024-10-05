@@ -30,7 +30,7 @@ function Navdetails({ resetMenu }) {
 
             {value.content && (
               <div>
-                <div className="absolute top-[58px] bg-white duration-500 hidden group-hover:md:block hover:md:block w-full left-0">
+                <div className="absolute top-[81px] bg-white duration-500 hidden group-hover:md:block hover:md:block w-full left-0">
                   <div className="md:grid hidden grid-rows-1 grid-cols-2">
                     <div className="flex flex-col py-5 items-center gap-5">
                       <div className="font-semibold text-xl border-b-2 flex gap-1">

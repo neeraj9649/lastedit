@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import heroImage from './Images/hero/hero-image.png'; // Ensure the correct path to your image
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import dotBg3 from './Images/hero/banner-shap-2.png'
 
 const HeroSection = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -14,14 +15,15 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className='w-full flex px-6 md:px-20 lg:px-36 py-14 md:py-28'>
+    <section className='w-full flex px-6 md:px-20 lg:px-36 py-14 md:py-28 bg-blue-50'>
       <div 
         className={`flex flex-col md:flex-row sm:w-full gap-10 w-full transition-all duration-1000 ${
           isLoaded ? 'animate-slideIn' : 'opacity-0'
         }`}
       >
         {/* Left Column: Text Section */}
-        <div className="flex-col w-full md:w-1/2 h-full flex justify-center p-4 md:p-8 text-center md:text-left">
+        <div className="flex-col w-full md:w-1/2 h-full flex justify-center p-4 md:p-8 text-center md:text-left "
+        style={{ backgroundImage: `url(${dotBg3})` }}>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#050748] font-bold mb-4">
             Website Development Services
           </h1>
