@@ -7,6 +7,7 @@ import {
   faDesktop,
   faGlobe,
   faSmile,
+ 
 } from "@fortawesome/free-solid-svg-icons";
 import IndustriesWeServe from './IndustriesWeServe'
 function MobileApplicationDevelopment() {
@@ -64,7 +65,7 @@ function MobileApplicationDevelopment() {
     </div>
   </div>
   <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-    <div className="bg-blue-100 p-6 rounded-lg shadow-md">
+    <div className="bg-blue-100 p-6 rounded-lg shadow-md"> 
       <FontAwesomeIcon
         icon={faRocket}
         className="text-4xl text-blue-500"

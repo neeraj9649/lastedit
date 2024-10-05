@@ -1,20 +1,34 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { 
+  faHome, 
+  faPlane, 
+  faGraduationCap, 
+  faBus, 
+  faCalendarAlt, 
+  faShoppingCart, 
+  faGamepad, 
+  faHeartbeat, 
+  faMoneyBillWave, 
+  faUtensils, 
+  faClock, 
+  faShoppingBasket 
+} from "@fortawesome/free-solid-svg-icons";
 
-const InddustriesWeServe = () => {
+const IndustriesWeServe = () => {
   const industries = [
-    { name: 'Real Estate App', icon: 'https://placehold.co/50x50?text=Real+Estate' },
-    { name: 'Tour & Travels App', icon: 'https://placehold.co/50x50?text=Tour+%26+Travels' },
-    { name: 'Education App', icon: 'https://placehold.co/50x50?text=Education' },
-    { name: 'Transport App', icon: 'https://placehold.co/50x50?text=Transport' },
-    { name: 'Event App', icon: 'https://placehold.co/50x50?text=Event' },
-    { name: 'E-Commerce App', icon: 'https://placehold.co/50x50?text=E-Commerce' },
-    { name: 'Game App', icon: 'https://placehold.co/50x50?text=Game' },
-    { name: 'Healthcare App', icon: 'https://placehold.co/50x50?text=Healthcare' },
-    { name: 'Finance App', icon: 'https://placehold.co/50x50?text=Finance' },
-    { name: 'Restaurant App', icon: 'https://placehold.co/50x50?text=Restaurant' },
-    { name: 'On-Demand App', icon: 'https://placehold.co/50x50?text=On-Demand' },
-    { name: 'Grocery App', icon: 'https://placehold.co/50x50?text=Grocery' },
+    { name: 'Real Estate App', icon: faHome },
+    { name: 'Tour & Travels App', icon: faPlane },
+    { name: 'Education App', icon: faGraduationCap },
+    { name: 'Transport App', icon: faBus },
+    { name: 'Event App', icon: faCalendarAlt },
+    { name: 'E-Commerce App', icon: faShoppingCart },
+    { name: 'Game App', icon: faGamepad },
+    { name: 'Healthcare App', icon: faHeartbeat },
+    { name: 'Finance App', icon: faMoneyBillWave },
+    { name: 'Restaurant App', icon: faUtensils },
+    { name: 'On-Demand App', icon: faClock },
+    { name: 'Grocery App', icon: faShoppingBasket },
   ];
 
   return (
@@ -24,7 +38,7 @@ const InddustriesWeServe = () => {
       <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10 px-4">
         {industries.map((industry, index) => (
           <div key={index} className="bg-white shadow-md rounded-lg p-6 flex items-center">
-            <img src={industry.icon} alt={`${industry.name} icon`} className="w-12 h-12 mr-4" />
+            <FontAwesomeIcon icon={industry.icon} className="w-12 h-12 mr-4 text-blue-900" />
             <span className="text-blue-900 font-semibold">{industry.name}</span>
           </div>
         ))}
@@ -33,4 +47,4 @@ const InddustriesWeServe = () => {
   );
 };
 
-export default InddustriesWeServe;
+export default IndustriesWeServe;

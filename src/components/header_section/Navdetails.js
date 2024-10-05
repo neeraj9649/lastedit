@@ -5,6 +5,7 @@ function Navdetails({ resetMenu }) {
   const [open, setOpen] = useState("");
   const [sublinks, setSublinks] = useState("");
 
+
   // Use effect to reset submenu states when the menu is toggled
   useEffect(() => {
     if (resetMenu) {
@@ -62,7 +63,7 @@ function Navdetails({ resetMenu }) {
                                 className="hover:text-gray-800"
                                 key={subname.name}
                               >
-                                <li>{subname.name}</li>
+                                <li >{subname.name}</li>
                               </Link>
                             ))}
                           </div>
