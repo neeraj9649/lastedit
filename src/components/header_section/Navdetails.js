@@ -77,8 +77,8 @@ function Navdetails({ resetMenu }) {
 
             {/* Mobile button */}
             <div className="md:hidden flex flex-col justify-between items-start px-5 pb-6 gap-6 font-semibold uppercase">
-              <button className="uppercase">About Us</button>
-              <button className="uppercase">Contact Us</button>
+              <Link to="/About-us" className="uppercase">About Us</Link>
+              <Link className="uppercase">Contact Us</Link>
             </div>
           </div>
           {/* Mobile menus */}
@@ -104,9 +104,11 @@ function Navdetails({ resetMenu }) {
                   }`}
                 >
                   {subl.sublinks.map((names) => (
+                    <Link to={names.link} key={names.name}>
                     <li className="py-2 pl-16 cursor-pointer" key={names.name}>
                       {names.name}
                     </li>
+                    </Link>
                   ))}
                 </div>
               </div>
