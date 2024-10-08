@@ -1,57 +1,42 @@
 import React from "react";
 import WhyChooseUs from "./WhyChooseUs";
+import TopComp from "./Topcomp";
 
 function SoftwareDevelopment() {
   return (
     <div>
-      <div
-        className="relative bg-cover bg-center h-64"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?fit=crop&w=1920&h=400')",
-        }}
-      >
-        <div className="absolute inset-0 bg-white opacity-75"></div>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <p className="text-sm text-gray-600">SERVICES</p>
-            <h1 className="text-3xl font-bold text-gray-800">
-              SOFTWARE DEVELOPMENT
-            </h1>
-          </div>
-        </div>
+      <div>
+        <TopComp />
       </div>
       <div className="text-center py-16 px-4">
         <p className="text-pink-500 text-sm">WE ARE CREATIVE</p>
         <h2 className="md:text-5xl text-3xl  font-bold">
-          <span className="gradient-text">Software</span> Development Company
+          <span className="gradient-text">Software</span> Development
         </h2>
         <p className="text-gray-600 mt-4 max-w-[80vw] mx-auto">
-          Versai Technology offers a wide range of software development services
-          which includes ERP, CRM and Banking softwares. We developed industry
-          specific softwares for different enterprises and our clients have
-          never complained about a single glitch, which is a very common thing
-          in softwares.
+          <b>Versai Tech Solutions</b> offers a wide range of web and app
+          development services, specializing in building fast-rendering websites
+          using React. Our team focuses on incorporating the latest technologies
+          and creating designs that are both modern and visually appealing.
         </p>
         <p className="text-gray-600 mt-4 max-w-[80vw] mx-auto">
-          Our engineers have developed softwares with the most complex mechanism
-          required for performing highly analytical jobs. Software development
-          is already a complex job and specific requirements make it an uphill
-          task. Instead of all these odds we have delivered projects which met
-          all requirements within deadline.
+          We develop industry-specific software solutions for enterprises,
+          delivering projects that meet even the most complex requirements. Our
+          clients appreciate the seamless performance of our software, with no
+          glitches or performance issues.
         </p>
         <p className="text-gray-600 mt-4 max-w-[80vw] mx-auto">
-          In the age of IT and ITES services, we have helped our clients by
-          developing software that can help them interact with their customers,
-          solve calculations, and even in fixing bugs. We have delivered highly
-          customized programs deployable among large teams and units.
+          In today's fast-paced IT landscape, we help our clients by developing
+          software that enhances customer interaction, solves complex problems,
+          and fixes bugs efficiently. Our solutions are designed for large
+          teams, ensuring smooth deployment and use across different units.
         </p>
         <p className="text-gray-600 mt-4 max-w-[80vw] mx-auto">
-          We specialize in developing comprehensive software which can handle
+          We specialize in creating comprehensive software capable of handling
           multi-tasking without errors. Our software development services have
-          set benchmarks for many. It is not just us, but the claim is
-          corroborated by our clients in their testimonials. We are proud to
-          have such developers in our team.
+          set a high standard in the industry, a fact corroborated by our
+          clients in their testimonials. We take pride in our talented team of
+          developers.
         </p>
       </div>
       <div className="container mx-auto px-4 py-8">

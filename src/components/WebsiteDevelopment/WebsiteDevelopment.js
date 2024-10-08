@@ -1,5 +1,4 @@
 import React from 'react'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import HeroSection from './HeroSection'
 import About from './About';
 import Services from './Services';

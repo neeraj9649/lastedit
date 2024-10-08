@@ -1,6 +1,7 @@
 import React from "react";
 import WhyChooseUs from './WhyChooseUs'
 import QuickResponse from "./QuickResponse";
+import TopComp from "./Topcomp";
 
 const services = [
   {
@@ -49,22 +50,9 @@ const services = [
 const EcommerceWebsiteDevelopment = () => {
   return (
     <div>
-      <div
-        className="relative bg-cover bg-center h-64"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?fit=crop&w=1920&h=400')",
-        }}
-      >
-        <div className="absolute inset-0 bg-white opacity-75"></div>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <p className="text-sm text-gray-600">SERVICES</p>
-            <h1 className="text-3xl font-bold text-gray-800">
-              ECOMMERCE WEBSITE DEVELOPMENT
-            </h1>
-          </div>
-        </div>
+      {/* Header Section */}
+      <div>
+        <TopComp />
       </div>
       <section className="about-agency w-full relative overflow-hidden px-4 md:px-8 lg:px-10 py-12 md:py-16 lg:py-20">
         <div className="container mx-auto px-4">
@@ -73,8 +61,8 @@ const EcommerceWebsiteDevelopment = () => {
               <div className="common-heading">
                 <p className="text-pink-500 text-sm mb-5">WE ARE CREATIVE</p>
                 <h2 className="lg:text-5xl text-3xl font-bold">
-                  <span className="gradient-text">ECOMMERCE</span> WEBSITE
-                  DEVELOPMENT COMPANY
+                  <span className="gradient-text">ECOMMERCE</span> PLATEFORM
+                  DEVELOPMENT 
                 </h2>
                 {/* <h2 className="mb-4 mt-2 text-3xl w-full md:text-4xl lg:text-5xl font-bold">
                   <span className="gradient-text">ECOMMERCE</span>
@@ -115,35 +103,42 @@ const EcommerceWebsiteDevelopment = () => {
         </h1>
 
         {/* Service Section Title */}
-        <div  className="text-center  mt-8 lg:px-20 xl:px-60">
-
-        <h2 className="gradient-textt text-3xl font-bold my-5 ">Our Services</h2>
-        <p className="text-lg mb-10 text-gray-500 ">
-          Assembling the website with the user in mind, focusing on enhancing
-          features and details so that information can be delivered quickly and
-          effectively.
-        </p>
-        <QuickResponse/>
+        <div className="text-center  mt-8 lg:px-20 xl:px-60">
+          <h2 className="gradient-textt text-3xl font-bold my-5 ">
+            Our Services
+          </h2>
+          <p className="text-lg mb-10 text-gray-500 ">
+            Assembling the website with the user in mind, focusing on enhancing
+            features and details so that information can be delivered quickly
+            and effectively.
+          </p>
+          <QuickResponse />
         </div>
       </div>
-       <div className="container mx-auto py-12 lg:px-20 xl:px-60 text-left px-4">
-            <h2 className="text-center text-2xl font-light text-gray-500 mb-2">Our Services</h2>
-            <h1 className="text-center text-4xl font-bold text-blue-900 mb-12">Custom eCommerce Solutions</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {services.map((service, index) => (
-                    <div key={index} className="flex items-start space-x-4">
-                        <div className="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-md">
-                            <i className={`${service.icon} text-3xl text-blue-900`}></i>
-                        </div>
-                        <div>
-                            <h3 className="text-xl font-bold text-blue-900">{service.title}</h3>
-                            <p className="text-blue-900">{service.description}</p>
-                        </div>
-                    </div>
-                ))}
+      <div className="container mx-auto py-12 lg:px-20 xl:px-60 text-left px-4">
+        <h2 className="text-center text-2xl font-light text-gray-500 mb-2">
+          Our Services
+        </h2>
+        <h1 className="text-center text-4xl font-bold text-blue-900 mb-12">
+          Custom eCommerce Solutions
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {services.map((service, index) => (
+            <div key={index} className="flex items-start space-x-4">
+              <div className="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-md">
+                <i className={`${service.icon} text-3xl text-blue-900`}></i>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-blue-900">
+                  {service.title}
+                </h3>
+                <p className="text-blue-900">{service.description}</p>
+              </div>
             </div>
+          ))}
         </div>
-        <WhyChooseUs/>
+      </div>
+      <WhyChooseUs />
     </div>
   );
 };

@@ -32,7 +32,7 @@ const IndustriesWeServe = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-white to-pink-100 font-nunito min-h-screen w-full flex flex-col items-center justify-center">
+    <div className="bg-gradient-to-b from-white to-pink-100 font-nunito py-10 w-full flex flex-col items-center justify-center">
       <h2 className="text-pink-500 text-sm">WE HAVE WORKED ACROSS MULTIPLE INDUSTRIES</h2>
       <h1 className="text-4xl font-bold text-blue-900 mt-2">Industries We Serve</h1>
       <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10 px-4">

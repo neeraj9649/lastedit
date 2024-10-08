@@ -23,13 +23,13 @@ function OurTeam() {
             technology, one solution at a time.
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center">
-            <div className="w-full md:w-1/3 flex justify-center mb-8 md:mb-0">
+            {/* <div className="w-full md:w-1/3 flex justify-center mb-8 md:mb-0">
               <img
                 src="https://placehold.co/300x400"
                 alt="Portrait of a person standing outdoors, wearing a dark blue shirt and smiling"
                 className="rounded-lg shadow-lg"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -21,7 +21,11 @@ const ServiceCard = ({ color, icon, title, description, link }) => {
           {description}
         </p>
         <Link to={link}>
-          <button className="text-sm font-bold mt-3 cursor-pointer text-blue-900">
+          <button className="text-sm font-bold mt-3 cursor-pointer text-blue-900"
+          onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+          >
             Read more &#x27A4;
           </button>
         </Link>
@@ -31,8 +35,8 @@ const ServiceCard = ({ color, icon, title, description, link }) => {
 };
 
 const CustomDevelopmentFeatures = () => {
-  return (
-    <section className="py-12 bg-yellow-50 flex flex-col gap-14">
+return (
+    <section className="py-12 bg-yellow-50 flex flex-col gap-14" id="myid">
       <div className="flex flex-col items-center gap-6 bg-yellow-50">
         <div className="flex flex-col md:flex-row items-center text-4xl gap-2 uppercase font-bold font-sans text-center">
           <h1 className="text-blue-950">We Transform</h1>
@@ -83,7 +87,7 @@ const CustomDevelopmentFeatures = () => {
           </p>
         </div>
 
-        <div className="w-full md:w-[60%] flex flex-wrap gap-5 justify-center md:justify-between">
+        <div className="w-full md:w-[60%] flex flex-wrap gap-5 justify-center md:justify-evenly">
           <ServiceCard
             color="bg-sky-100"
             icon={img1}

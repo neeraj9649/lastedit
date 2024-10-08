@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./header_section/logo1.png";
+import {Link} from "react-router-dom"
 import {
   FaTwitter,
   FaInstagram,
@@ -46,7 +47,7 @@ const Footer = () => {
               {" "}
               {/* Added flex-col and items-start */}
               <div className="flex items-center mb-2 gap-2">
-              <ion-icon name="call"></ion-icon>
+                <ion-icon name="call"></ion-icon>
                 <span className="font-bold">Contact No: 8107053177</span>
               </div>
               <div className="flex items-center mb-2">
@@ -80,21 +81,36 @@ const Footer = () => {
           <div className="w-full md:w-1/6 mb-8 md:mb-0 md:ml-8  ">
             <h2 className="text-2xl font-bold mb-4">Company</h2>
             <ul>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
+              <Link to="/About-us">
+                <li
+                  className="mb-2 hover:underline"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   About Us
-                </a>
-              </li>
+                </li>
+              </Link>
               <li className="mb-2">
-                <a href="#" className="hover:underline">
+                <a
+                  href="https://forms.gle/81sunXF6NXQjV3GR8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
                   Career
                 </a>
               </li>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
+              <Link to="/Contact-us">
+                <li
+                  className="mb-2 hover:underline"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   Contact Us
-                </a>
-              </li>
+                </li>
+              </Link>
             </ul>
           </div>
 
@@ -102,26 +118,47 @@ const Footer = () => {
           <div className="w-full md:w-1/6 md:ml-8">
             <h2 className="text-2xl font-bold mb-4">Support</h2>
             <ul>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
+              <Link to="/Privacy-policy">
+                <li
+                  className="mb-2 hover:underline"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   Privacy Policy
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
+                </li>
+              </Link>
+              <Link to="/Term-and-condition">
+                <li
+                  className="mb-2 hover:underline"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   Terms and Conditions
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  Cancellation and Refunds
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
+                </li>
+              </Link>
+              <Link to="/Refund">
+                <li
+                  className="mb-2 hover:underline"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  Cancellation and Refund
+                </li>
+              </Link>
+              <Link to="/Faqs">
+                <li
+                  className="mb-2 hover:underline"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   FAQ
-                </a>
-              </li>
+                </li>
+              </Link>
+              
             </ul>
           </div>
         </div>

@@ -40,7 +40,7 @@ const ProductSection = () => {
 
   return (
     <section className="product text-white py-5 mt-32">
-      <h2 className="font-serif text-2xl font-semibold pb-2 capitalize text-center md:text-left px-5 ">
+      <h2 className="font-serif text-2xl font-semibold pb-2 text-sky-600 capitalize text-center md:text-left px-5 ">
         Transforming your
       </h2>
       <h2 className=" text-2xl font-serif text-green-950 font-semibold mb-10 capitalize text-center md:text-left px-5" >

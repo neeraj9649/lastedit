@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const navlinks = [
   {
     id: 1,
@@ -19,10 +17,10 @@ const navlinks = [
           },
           {
             name: "App Store Optimization",
-            link: "/Search-Engine-Optimization",
+            link: "/App-Store-Optimization",
           },
-          { name: "Ads (Social Media)", link: "/Search-Engine-Optimization" },
-          { name: "Poster Design", link: "/Search-Engine-Optimization" },
+          { name: "Ads (Social Media)", link: "/Ads" },
+          { name: "Poster Design", link: "/Poster-Design" },
         ],
       },
 
@@ -40,7 +38,7 @@ const navlinks = [
           { name: "Software Development", link: "/Software-Development" },
           {
             name: "IOS Application Development",
-            link: "/Mobile-Application-Development",
+            link: "/IOS-Application-Development",
           },
           {
             name: "Custom Development",

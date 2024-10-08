@@ -5,8 +5,8 @@ const YourComponent = () => {
     <div className="bg-gray-50">
       <script src="https://cdn.tailwindcss.com"></script>
       <div className="container mx-auto px-4 py-16">
-        <div className="flex flex-col md:flex-row items-center">
-          <div className="relative w-full md:w-1/2 mb-8 md:mb-0">
+        <div className="flex flex-col  md:flex-row items-center gap-8 ">
+          <div className="relative w-full  md:w-1/2 mb-40 md:mb-32 flex justify-center">
             <div className="absolute top-0 left-0 w-48 h-48 bg-pink-100 rounded-full -z-10"></div>
             <div className="absolute top-0 left-0 w-48 h-48 bg-blue-100 rounded-full opacity-50 -z-20"></div>
             <div className="relative">
@@ -19,7 +19,7 @@ const YourComponent = () => {
               />
               <img
                 alt="Group of people sitting on stairs and smiling"
-                className="rounded-lg shadow-lg absolute bottom-0 left-0 transform -translate-x-16 translate-y-16"
+                className="rounded-lg shadow-lg absolute bottom-0 left-0 transform -translate-x-16  translate-y-44"
                 height="200"
                 src="https://storage.googleapis.com/a1aa/image/f97FeQecPCSdsJyhr6UCaNYwoRXWNExFfVfB6DOUChquK6bcC.jpg"
                 width="300"
@@ -32,29 +32,25 @@ const YourComponent = () => {
               <span className="text-pink-500"> Your Success</span>
             </h1>
             <p className="text-gray-700 mb-4">
-              <strong>Blockchain technology</strong> has witnessed an
-              unprecedented surge in demand after its introduction as a shared
-              and secured ledger for Bitcoin by Satoshi Nakamoto. Currently it’s
-              sweeping the business domains across the globe due to its
-              revolutionary nature of simplifying processes while making them
-              transparent, immutable, and secure.
+              At <b>Versai Tech Solutions</b>, we specialize in providing
+              high-quality web and app solutions tailored to meet the dynamic
+              needs of businesses today. We design websites using the latest
+              technologies, including React, ensuring fast rendering and a
+              seamless user experience. Our focus is on crafting modern websites
+              with innovative designs that not only look great but also perform
+              efficiently. Whether it's web development or mobile app
+              development, we are committed to delivering solutions that drive
+              your business toward success.
             </p>
-            <p className="text-gray-700 mb-4">
-              Business sectors such as Business administration, Business order
-              tracking, Supply chain, Banking and Finance, E-learning,
-              Healthcare, Online shopping portals, Insurance, Travel, Music,
-              Renewable energy, Contract validation, Real Estate, Government
-              Services, and many other day-to-day transactions are rapidly
-              turning towards Blockchain as a solution for problems that
-              persisted for long with little feasible solutions.
-            </p>
-            <p className="text-gray-700">
-              Versai Technology (OPC) Private Limited is one of the pioneers of
-              providing Blockchain services and solutions. We understand the
-              ever-growing demands for decentralized ecosystems that are driving
-              today’s enterprises. Hence, we offer solutions that perfectly
-              match the need for innovation and support for sustained growth
-              across industries.
+            <p>
+              Our team is dedicated to staying ahead of industry trends,
+              utilizing cutting-edge tools and best practices to create scalable
+              and responsive websites. We believe in delivering solutions that
+              not only meet but exceed our clients' expectations. From sleek,
+              user-friendly interfaces to robust backend functionality, we
+              ensure that every project is a blend of creativity and technology,
+              designed to provide optimal performance and growth for your
+              business.
             </p>
           </div>
         </div>

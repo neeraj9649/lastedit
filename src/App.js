@@ -6,13 +6,23 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import Navbar from "./components/header_section/Navbar";
 import Header from "./components/Header";
 import MobileAppDevelopment from "./components/MobileApplicationDevelopmet/MobileApplicationDevelopment";
+import IOSAppDevelopment from "./components/IOSApplicationDevelopmet/IOSApplicationDevelopment";
 import Seo from "./components/SearchEngineOptimization/SearchEngineOptimization";
 import WebsiteDevelopment from "./components/WebsiteDevelopment/WebsiteDevelopment";
 import SoftwareDevelopment from "./components/SoftwareDevelopment/SoftwareDevelopment";
 import EcommerceSolutions from "./components/EcommerceWebsiteDevelopment/EcommerceWebsiteDevelopment";
 import CustomDevelopment from "./components/CustomDevelopmentFeatures/CustomDevelopmentFeatures";
+import AppStoreOptmization from "./components/AppStoreOptimization/AppStoreOptimization"
+import Poster from "./components/PosterDesign/PosterDesign"
+import Ads from "./components/SocilMediaAds/SocialMediaAds"
 import Aboutus from "./components/Aboutus/aboutus";
 import Footer from "./components/Footer";
+import Contactus from "./components/ContactUs/ContactPage"
+import TermsAndConditions from "./components/footerpolicy/Terms&Conditions/Terms&Conditions";
+import Refund from "./components/footerpolicy/Refund/Refund";
+import FAQ from "./components/footerpolicy/FAQ/FAQ"
+import PrivacyPolicy from "./components/footerpolicy/PrivacyPolicy/PrivacyPolicy";
+
 
 function App() {
   return (
@@ -20,19 +30,30 @@ function App() {
       <Navbar />
       <div className="content">
         {" "}
-        {/* Add a class for styling */}
         <Routes>
-          {/* Define your routes here */}
           <Route path="/" element={<Header />} />
           <Route path="/About-us" element={<Aboutus />} />
           <Route path="/Search-Engine-Optimization" element={<Seo />} />
-          {/* <Route path="/AppStoreOptimization" element={<AppStoreOptimization />} /> */}
-          {/* <Route path="/Ads(SocialMedia)" element={<SocialMediaAds />} /> */}
-          {/* <Route path="/PosterDesign" element={<PosterDesign />} /> */}
+          <Route
+            path="/App-Store-Optimization"
+            element={<AppStoreOptmization />}
+          />
+          <Route path="/Poster-Design" element={<Poster />} />
+          <Route path="/Ads" element={<Ads />} />
+          <Route path="/Contact-us" element={<Contactus />} />
+          <Route path="/Term-and-condition" element={<TermsAndConditions />} />
+          <Route path="/Refund" element={<Refund />} />
+          <Route path="/Faqs" element={<FAQ />} />
+          <Route path="/Privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/Website-Development" element={<WebsiteDevelopment />} />
+          
           <Route
             path="/Mobile-Application-Development"
             element={<MobileAppDevelopment />}
+          />
+          <Route
+            path="/IOS-Application-Development"
+            element={<IOSAppDevelopment />}
           />
           <Route path="/Ecommerce-Solutions" element={<EcommerceSolutions />} />
           <Route
@@ -50,16 +71,3 @@ function App() {
 
 export default App;
 
-{
-  /* <Route path="/Mobile-App-Development" element={<Mobileapp />} />
-          <Route path="/Website-Development" element={<WebsiteDevelopment />} />
-          <Route path="/Search-Engine-Optmization" element={<Seo />} />
-          <Route
-            path="/Software-Development"
-            element={<SoftwareDevelopment />}
-          />
-          <Route
-            path="/Ecommerce-Development"
-            element={<EcommerceDevelopment />}
-          /> */
-}
